@@ -7,28 +7,39 @@
         <div>
             <div>
                 <header>
-                    <img src="C:\Users\lenovo\Desktop\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" height="200px" width="150px" alt="logo"/>
-                    <a href="login.html" target="_blank" >Login</a>
+                    <a href="index.html" target="_self"><img src="C:\Users\lenovo\Desktop\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" height="200px" width="150px" alt="logo"/></a>
+                    <a href="login.html" target="_self" >Login</a>
                 </header>
             </div>
             <div>
                 <article>
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
                     <br>
-                    <a href="payment.html" target="_self">Book Now</a>
+                    <form action="payment.html" method="GET" target="_self">
+                        <label for="Adults">Adults: </label>
+                        <input type="number" min="1" name="adult" required/><br>
+                        <label for="Name">Name: </label>
+                        <input type="text" name="name" required/><br>
+                        <label for="From date">From Date: </label>
+                        <input type="date" name="fromDate" required/><br>
+                        <label for="To date ">To Date: </label>
+                        <input type="date" name="toDate" required/><br>
+                        <label for="Total">Total: </label>
+                        <input type="number" name="price" disabled/><br>
+                        <button>Book Now</button>
+                    </form>
                     <h2>Radisson Blu Hotel</h2>
                     <p>Rating</p>
                     <p>5 Star</p>
                     <p>AMENITIES</p>
-                    <p><ul>
-                            <li>Room service</li>
-                            <li>Restaurant</li>
-                            <li>Business center</li>
-                            <li>Fitness center</li>
-                            <li>Pool</li>
-                        </ul>
-                    </p>
-                    <p><h5>DESCRIPTION</h5></p>
+                    <ul>
+                        <li>Room service</li>
+                        <li>Restaurant</li>
+                        <li>Business center</li>
+                        <li>Fitness center</li>
+                        <li>Pool</li>
+                    </ul>
+                        <p><h5>DESCRIPTION</h5></p>
                     <p>Best online rate guaranteed. Book Online Now! Free Wifi, breakfast included, best rate guaranteed, on-site dining, bed & breakfast package.</p>
                 </article>
             </div>
