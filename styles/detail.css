@@ -1,0 +1,16 @@
+body{
+    height: 100vh;
+    width: 100vw;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+}
+#radisson-blu-hotel-image{
+    height: 500px;
+    width: 500px;
+}
+.social-media-image{
+    height: 20px;
+    width: 22px;
+}
