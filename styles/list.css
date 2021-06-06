@@ -3,9 +3,10 @@
     width: 60px;
 }
 body{
-    
     height: 100vh;
     width: 100vw;
+    margin: 0;
+    background-color: #e0e0e0;
 }
 .hotel-image{
     height: 200px;
@@ -15,4 +16,30 @@ body{
     height: 20px;
     width: 22px;
 }
+.header{
+    background-color: rosybrown;
+}
+.footer{
+    background-color: rosybrown;
+}
+#list-viw{
+    margin: 2%;
+    }
+
+#radisson{
+    margin: 2%;
+    background-color: rgb(132,136,139);
+    width: 40%;
+}
+#lalit{
+    margin: 2%;
+    background-color: rgb(132,136,139);
+    width: 40%;
+}
+#taj-palace{
+    margin: 2%;
+    background-color: rgb(132,136,139);
+    width: 40%;
+}
+
 
