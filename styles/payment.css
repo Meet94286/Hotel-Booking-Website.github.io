@@ -1,26 +1,6 @@
-#logo{
-    height: 60px;
-    width: 60px;
-}
-body{
-    height: 100vh;
-    width: 100vw;
-    margin: 0%;
-    background-color: #e0e0e0;
-}
 #radisson-blu-hotel-image{
     height: 500px;
     width: 500px;
-}
-.social-media-image{
-    height: 20px;
-    width: 22px;
-}
-.header{
-    background-color: rosybrown;
-}
-.footer{
-    background-color: rosybrown;
 }
 #hotel-info{
     background-color: rgb(132,136,139);
@@ -38,4 +18,8 @@ body{
     padding: 1% 2%;
     border: 1px solid black;
     border-radius: 5px;
+}
+#pay-div{
+    text-decoration: none;
+    color: black;
 }

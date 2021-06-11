@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    background-color: #e0e0e0;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    position: relative;
+}
+.header{
+    background-color: rosybrown;
+    width: 100%;
+    top: 0px;
+    position:fixed;
+}
+.footer{
+    background-color: rosybrown;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 auto;
+}
+#login{
+    float: right;
+    color: black;
+    line-height: 60px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+.contact-div{
+    margin-left: 10px;
+}
+#contact{
+    text-decoration:none;
+    color: black;
+}
+.apps{
+    margin-right: 10px;
+}
+#name{
+    margin-top: 45px;
+    font-size: 10px;
+}   
