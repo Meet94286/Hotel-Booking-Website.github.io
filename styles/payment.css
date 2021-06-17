@@ -1,25 +1,43 @@
 #radisson-blu-hotel-image{
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 270px;
 }
 #hotel-info{
     background-color: rgb(132,136,139);
     width: 50%;
-    height: 20%;
+    height: 300px;
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 4%;
     margin-bottom: 2%;
+    display: flex;  
 }
 #customer-info{
-    margin: 2%;
+    margin-top: 1%;
+    
 }
 #payment-info{
-    margin: 2%;
-    padding: 1% 2%;
-    border: 1px solid black;
-    border-radius: 5px;
+    margin-top: 55px;
 }
 #pay-div{
     text-decoration: none;
     color: black;
+}
+.text-info{
+    margin-top: 9%;
+    margin-left: 3%;
+}
+.info{
+     display: flex;
+     justify-content: space-evenly;
+     border: 1px solid black;
+     border-radius: 5px;
+     margin: 2%;
+     background-color: rosybrown;
+}
+.details{
+    padding-bottom: 4%;
+    font-family: cursive;
+}
+.pay{
+    margin-top: 7%;
 }

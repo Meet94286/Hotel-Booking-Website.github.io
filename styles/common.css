@@ -10,7 +10,11 @@ body{
     background-color: rosybrown;
     width: 100%;
     top: 0px;
+    
     position:fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer{
     background-color: rosybrown;
@@ -25,27 +29,32 @@ body{
 #logo{
     height: 60px;
     width: 60px;
-    float: left;
-    margin: 0 auto;
+}
+.logo-div{
+    margin-left: 1%;
+    height: 60px;
+
 }
 #login{
-    float: right;
+    
     color: black;
     line-height: 60px;
-    padding-right: 20px;
     text-decoration: none;
 }
+.login-div{
+    margin-right: 2%;
+}
 .contact-div{
-    margin-left: 10px;
+    margin-left: 2%;
 }
 #contact{
     text-decoration:none;
     color: black;
 }
 .apps{
-    margin-right: 10px;
+    margin-right: 1%;
 }
 #name{
-    margin-top: 45px;
+    
     font-size: 10px;
 }   

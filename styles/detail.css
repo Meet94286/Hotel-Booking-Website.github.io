@@ -2,14 +2,61 @@ html{
     height: 100%;
 }
 #radisson-blu-hotel-image{
-    height: 500px;
+    height: 350px;
     width: 500px;
-    margin: 2% 4% 0%;
+     margin: 3%;
+    right: 10%;
 }
 
-#booking-details{
-    margin: 0% 4% 1%;
-}
+
 #radisson-hotel-details{
-    margin: 1% 4% 2%;
+    margin: 1% 4% 2% 1.5%;
+    
 }
+.hotel-div{
+    height: 382px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 25px;
+       
+}
+.img-div{
+    margin-left: 3%;
+    
+}
+.text {
+    width: 60%;
+    
+  }
+  .input {
+    width: 40%;
+    box-sizing: border-box;
+  }
+  .form {
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 12px;
+    
+    
+  }
+  .v1{
+      
+      border: 1px solid black;
+      position: relative;
+      left: 11%;
+   
+  }
+ #button{
+     padding: 6px;
+     margin-left: 13em;
+}
+
+ .main{
+     margin-top: 10px;
+ }
+ ._font{
+    font-family: cursive;
+    font-weight: 600;
+ }  

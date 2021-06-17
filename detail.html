@@ -9,30 +9,84 @@
     </head>
     <body>
         <header class="header">
-            <a href="index.html" target="_self"><img id="logo" src="C:\Users\lenovo\Desktop\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" height="200px" width="150px" alt="logo"/></a>
-                    <a href="login.html" target="_self" id="login" >Login</a>
-                </header>
+            <div class="logo-div">
+                <a href="index.html" target="_self"><img id="logo" src="assests\images\logo.png" height="200px" width="150px" alt="logo"/></a>
+            </div >
+            <div class="login-div">
+                   <a href="login.html" id="login" target="_self">Login</a>
+            </div>
+               </header>
+
+
             <article class="content">
+
+
+            <div class="hotel-div">
+        
+                <div class="img-div">
                     <img id="radisson-blu-hotel-image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
-                    <br>
-                    <form id="booking-details"  action="payment.html" method="GET" target="_self">
-                        <label for="Adults">Adults: </label>
-                        <input type="number" min="1" name="adult" required/><br>
-                        <label for="Name">Name: </label>
-                        <input type="text" name="name" required/><br>
-                        <label for="From date">From Date: </label>
-                        <input type="date" name="fromDate" required/><br>
-                        <label for="To date ">To Date: </label>
-                        <input type="date" name="toDate" required/><br>
-                        <label for="Total">Total: </label>
-                        <input type="number" name="price" disabled/><br>
-                        <button>Book Now</button>
+                </div>
+
+
+                <div class="v1"></div>
+
+
+                 <div style="margin-top: 15px">
+
+               <form id="booking-details"  action="payment.html" method="GET" target="_self">
+
+                         
+                         <div class="form">
+                        <label class="text" for="Adults">Adults: </label>
+                        <div class="input">
+                        <input type="number" min="1" name="adult" style="width: 250%" required/>
+                        </div>
+                        </div>
+
+                        <div class="form">
+                        <label class="text" for="Name">Name: </label>
+                        <div class="input">
+                        <input type="text" name="name" style="width: 250%" required/>
+                        </div>
+                        </div>
+
+                        <div class="form">
+                        <label class="text" for="From date">From Date: </label>
+                        <div class="input">
+                        <input type="date" name="fromDate" style="width: 253%" required/>
+                        </div>
+                        </div>
+
+                        <div class="form">
+                        <label class="text" for="To date ">To Date: </label>
+                        <div class="input">
+                        <input type="date" name="toDate" style="width: 253%" required/>
+                        </div>
+                        </div>
+
+                        <div class="form">
+                        <label class="text" for="Total">Total: </label>
+                        <div class="input">
+                        <input type="number" name="price" style="width: 250%" disabled/>
+                        </div>
+                        </div>
+                        
+
+                        <div id="button-div">
+                        <button id="button">Book Now</button>
+                        </div>
                     </form>
-                <div id="radisson-hotel-details">
+                
+                </div>
+                </div>
+                
+                
+            
+                <div id="radisson-hotel-details" class="div1">
                     <h2>Radisson Blu Hotel</h2>
-                    <p>RATING</p>
+                    <p class="_font">RATING</p>
                     <p>5 Star</p>
-                    <p>AMENITIES</p>
+                    <p class="_font">AMENITIES</p>
                     <ul>
                         <li>Room service</li>
                         <li>Restaurant</li>
@@ -42,10 +96,12 @@
                     </ul>
                     
                 
-                        <p><h5>DESCRIPTION</h5></p>
+                
+                        <p><h5 class="_font">DESCRIPTION</h5></p>
                     <p>Best online rate guaranteed. Book Online Now! Free Wifi, breakfast included, best rate guaranteed, on-site dining, bed & breakfast package.</p>
             
                 </div>
+            
             </article>
             
             
