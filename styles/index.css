@@ -1,11 +1,8 @@
-
 .city{
     height: 150px;
     width: 150px;
     border-radius: 25%;
     box-shadow: 10px 10px 10px grey;
-    
-    
 }
 .social-media-image{
     height: 20px;
@@ -49,7 +46,6 @@ width: 100%;
     margin-top: 8%;
 }
 #view{
-
     text-decoration: none;
     color: black;
 }
@@ -59,15 +55,14 @@ width: 100%;
     color: #f1f1f1;
     text-align: center;
 }
-
 .city-images:hover .text{
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.5);
 }
 #_delhi:link{
-    
     text-decoration: none;
 }
+
 
 
 

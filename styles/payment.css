@@ -13,7 +13,6 @@
 }
 #customer-info{
     margin-top: 1%;
-    
 }
 #payment-info{
     margin-top: 55px;
@@ -40,4 +39,7 @@
 }
 .pay{
     margin-top: 7%;
+}
+.color{
+    color: black;
 }
