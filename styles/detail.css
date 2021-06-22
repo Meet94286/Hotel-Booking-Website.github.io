@@ -1,11 +1,9 @@
 html{
     height: 100%;
 }
-#radisson-blu-hotel-image{
+#slider-image{
     height: 350px;
-    width: 500px;
-     margin: 3%;
-    right: 10%;
+    width: -30px;
 }
 #radisson-hotel-details{
     margin: 1% 4% 2% 1.5%;
@@ -19,7 +17,9 @@ html{
     margin: 25px;
 }
 .img-div{
+    padding-left: 3%;
     margin-left: 3%;
+    width: 30%;
 }
 .text {
     width: 60%;
@@ -46,6 +46,16 @@ html{
      margin-top: 10px;
  }
 ._font{
+    
     font-family: cursive;
     font-weight: 600;
-}  
+}
+.checked{
+    color: orange;
+}
+.rating{
+    margin-top: -10px;
+}
+
+
+
