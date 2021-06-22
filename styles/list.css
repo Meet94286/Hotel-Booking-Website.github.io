@@ -80,3 +80,6 @@
 .desc-div:hover{
     color: black;
 }
+.checked{
+    color: orange;
+}

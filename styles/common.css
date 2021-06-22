@@ -2,7 +2,6 @@ body {
     background-color: #e0e0e0;
     padding-bottom: 80px;
     position: relative;
-    /*overflow-x: hidden;*/
     margin: 0;
     font-family: "Ubuntu", sans-serif;
     padding-top: 60px;
@@ -73,5 +72,21 @@ footer{
     justify-content: center;
     padding-bottom: 0em;
 }
+.login-input{
+  width: 13em;
+  align-items: center;
+}
+#username{
+  margin-left: 50px;
+  margin-top: 5px;
+}
+#password{
+  margin-top: 20px;
+  margin-left: 53px;
+  margin-bottom: 5px;
+}
+
+
+
 
   
