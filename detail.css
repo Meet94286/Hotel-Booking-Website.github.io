@@ -1,0 +1,120 @@
+html{
+    height: 100%;
+}
+#slider-image{
+    height: 350px;
+    width: -30px;
+}
+#radisson-hotel-details{
+    margin: 1% 4% 2% 1.5%;
+}
+.hotel-div{
+    height: 382px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+.img-div{
+    padding-left: 3%;
+    margin-left: 3%;
+    width: 30%;
+}
+.text {
+    width: 60%;
+}
+.input {
+    width: 40%;
+    box-sizing: border-box;
+}
+.form-1{
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 12px;
+}
+.v1{
+    border: 1px solid black;
+    position: relative;
+    left: 11%;
+}
+#button{
+     padding: 6px;
+     margin-left: 11em;
+}
+.main{
+     margin-top: 10px;
+ }
+._font{
+    
+    font-family: cursive;
+    font-weight: 600;
+}
+.checked{
+    color: orange;
+}
+.rating{
+    margin-top: -10px;
+}
+.carousel{
+    margin-top: 15px;
+}
+#prev{
+    left: -11em;
+}
+h2{
+    font-family: "Ubuntu", sans-serif;
+}
+#input{
+    width: 250%;
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    #nav{
+        width: 92%;
+    }
+    .footer{
+        width: 92%;
+        height: 4%;
+    }
+    #name{
+        font-weight: bold;
+    }
+    .hotel-div{
+        width: 87%;
+        margin-left: 2%;
+    }
+    #input{
+        width: 250%;
+        margin-left: -7%;
+    }
+    .v1{
+        margin-left: 5% ;
+    }
+    .outer{
+        margin-left: 9%;
+    }
+    .form-1{
+        margin-right: 35%;
+    }
+    #button{
+        margin-left: 35%;
+    }
+    .carousel{
+        margin-left: -32%;
+        width: 201%;
+        margin-top: 4%;
+    }
+    #slider-image{
+        height: 366px;
+    }
+    #right-button{
+        margin-left: -560%;
+    }
+    #prev{
+        left: -2%;
+    }
+}
+
+
+
+
