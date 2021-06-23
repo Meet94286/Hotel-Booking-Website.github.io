@@ -37,6 +37,8 @@
   </head>
   <body style="background-color: #e0e0e0;">
     <div>
+      <div id="loading">
+      </div>
       <header>
         <nav class="navbar-light" id="nav">
           <div class="logo-div">
@@ -58,7 +60,7 @@
       <article class="content">
         <div class="hotel-div">
          <div class="img-div">
-          <div id="carouselExampleControls" class="carousel slide" style="margin-top: 15px" data-bs-ride="carousel">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" style="margin-left: 0em;">
               <div class="carousel-item active">
                 <img id="slider-image"  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="d-block w-100" alt="pool-side-image">
@@ -71,7 +73,7 @@
               </div>
             </div>
             <a
-              style="left: -10em;"class="carousel-control-prev"href="#carouselExampleControls"
+              class="carousel-control-prev" id="prev"  href="#carouselExampleControls"
               role="button"
               data-slide="prev">
              <svg  xmlns="http://www.w3.org/2000/svg"width="55px"height="55px"fill="rosybrown"
@@ -90,6 +92,7 @@
                     height="55px"
                     fill="rosybrown"
                     class="bi bi-chevron-right"
+                    id="right-button"
                     viewBox="0 0 16 16">
                     <path
                       fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -99,36 +102,36 @@
               </div>
             </div>
           <div class="v1"></div>
-          <div style="margin-top: 15px">
+          <div class="outer" style="margin-top: 15px">
             <form id="booking-details"  action="payment.html" method="GET" target="_self">
               <div class="form-1">
                 <label class="text" for="Adults">Adults: </label>
                 <div class="input">
-                  <input type="number" min="1" name="adult" style="width: 250%" required/>
+                  <input id="input" type="number" min="1" name="adult"  required/>
                 </div>
               </div>
               <div class="form-1">
                 <label class="text" for="Name">Name: </label>
                 <div class="input">
-                  <input type="text" name="name" style="width: 250%" required/>
+                  <input id="input" type="text" name="name" required/>
                 </div>
               </div>
               <div class="form-1">
                 <label class="text" for="From date">From Date: </label>
                 <div class="input">
-                  <input type="date" name="fromDate" style="width: 253%" required/>
+                  <input id="input" type="date" name="fromDate"  required/>
                 </div>
               </div>
               <div class="form-1">
                 <label class="text" for="To date ">To Date: </label>
                 <div class="input">
-                  <input type="date" name="toDate" style="width: 253%" required/>
+                  <input id="input" type="date" name="toDate"  required/>
                 </div>
               </div>
               <div class="form-1">
                 <label class="text" for="Total">Total: </label>
                 <div class="input">
-                  <input type="number" name="price" style="width: 250%" disabled/>
+                  <input id="input" type="number" name="price"  disabled/>
                 </div>
               </div>
               <div  id="button-div">

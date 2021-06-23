@@ -85,6 +85,14 @@ footer{
   margin-left: 53px;
   margin-bottom: 5px;
 }
+@media only screen and (max-width: 576px){
+  #username{
+    margin-left: 0%;
+  }
+  #password{
+    margin-left: 0%;
+  }
+}
 
 
 
