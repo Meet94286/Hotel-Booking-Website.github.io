@@ -24,7 +24,8 @@
 .text-info{
     margin-top: 9%;
     margin-left: 3%;
-}
+    font-family: "Ubuntu", sans-serif;
+    }
 .info{
      display: flex;
      justify-content: space-evenly;
@@ -42,4 +43,64 @@
 }
 .color{
     color: black;
+}
+@media only screen and (max-width: 576px){
+    #hotel-info{
+    background-color: rgb(132,136,139);
+    width: 100%;
+    height: 20%;
+    margin: 5% auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 10%; 
+  }
+  .info{
+      display: block;
+      padding-left: 4%;
+    }
+  .details{
+      padding-bottom: 1%;
+    }
+  #customer-info{
+      margin-top: 6%;
+    }
+  #payment-info{
+      margin-top: 0%;
+    }
+  .pay{
+      margin-bottom: 10%;
+      display: flex;
+      justify-content: center;
+    }
+  .footer{
+      height: 7%;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+     body{
+         height: 100%;
+     }
+     #hotel-info{
+         font-size: larger;
+         width: 83% ;
+         height: 250px;
+         margin-bottom: 6%;
+        }
+    #radisson-blu-hotel-image{
+        height: 250px;
+    }
+    .details{
+        padding-bottom: 0%;
+    }
+    #customer-info{
+        margin-top: 0%;
+    }
+    .pay{
+        margin-top: 9%;
+    }
+    .footer{
+        height: 7%;
+    }
 }

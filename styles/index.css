@@ -62,6 +62,31 @@ width: 100%;
 #_delhi:link{
     text-decoration: none;
 }
+@media only screen and (max-width: 576px){
+    #search-bar{
+        width: 133%;
+    }
+    .city-cards{
+        display: grid;
+        margin-left: 28%;
+        margin-top: 5%;
+    }
+    .city{
+        margin-bottom: 52%;
+        height: 300px;
+        width: 300px;
+    }
+    .view-div{
+        margin-left: 32%;
+    }
+    .footer{
+        height: 6%;
+    }
+    #name{
+        font-weight: bold;
+    }
+}
+   
 
 
 
