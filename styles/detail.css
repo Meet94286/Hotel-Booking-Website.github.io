@@ -71,6 +71,7 @@ h2{
 #input{
     width: 250%;
 }
+/*changed*/
 @media only screen and (min-width: 576px) and (max-width: 768px){
     #nav{
         width: 92%;
@@ -120,6 +121,7 @@ h2{
         right: -43%;
     }
 }
+/*changed*/
 @media only screen and (max-width: 576px){
     body{
         width: 100%;
@@ -176,12 +178,6 @@ h2{
     #name{
         font-weight:bold;
     }
-
-
-
-
-
-
 }
 
 

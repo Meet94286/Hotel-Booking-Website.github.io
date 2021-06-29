@@ -68,6 +68,7 @@ width: 100%;
 #_delhi:link{
     text-decoration: none;
 }
+/*changed*/
 @media only screen and (max-width: 576px){
     #search-bar{
         width: 133%;
@@ -104,6 +105,7 @@ width: 100%;
         margin-top: -15%;
     }
 }
+/*changed*/
 @media only screen and (min-width: 576px) and (max-width: 768px){
     .row{
         display: block;
