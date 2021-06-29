@@ -22,14 +22,14 @@ width: 100%;
 #bar:focus{
     outline: none;
 }
-.city-cards{
+
+/*changed*/
+.grid-container{
+    padding-top: 50px;
     text-align: center;
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin-bottom: 100px;
 }
-#bar{
+    #bar{
     background-color: #f1f1f1;
     border: 1px solid transparent;
     border-radius: 12px;
@@ -41,19 +41,25 @@ width: 100%;
     margin-left: 36%;
     margin-right: 34.5%;   
 }
+/*changed*/
 .view-div{
     text-align: center;
     margin-top: 8%;
+    margin-bottom: 1%;
 }
 #view{
     text-decoration: none;
     color: black;
 }
+/*changed*/
 .text{
     visibility: hidden;
-    margin-top: -55%;
+   margin-top: -27%;
     color: #f1f1f1;
     text-align: center;
+    width: 32%;
+    margin-right: 0;
+    margin-left: 36%; 
 }
 .city-images:hover .text{
     visibility: visible;
@@ -66,12 +72,11 @@ width: 100%;
     #search-bar{
         width: 133%;
     }
-    .city-cards{
-        display: grid;
-        margin-left: 28%;
-        margin-top: 5%;
+    .grid-container{
+        margin-left: 23%;
+        margin-bottom: 0;
     }
-    .city{
+   .city{
         margin-bottom: 52%;
         height: 300px;
         width: 300px;
@@ -84,6 +89,55 @@ width: 100%;
     }
     #name{
         font-weight: bold;
+    }
+    .city-images{
+        height: 300px;
+        width: 300px;
+        margin-bottom: 25%;
+    }
+    .text{
+        margin-top: -107%;
+        margin-left: 35%;
+        font-size: x-large;
+    }
+    #container-2{
+        margin-top: -15%;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    .row{
+        display: block;
+        width: 67%;
+        margin-top: 0%;
+    }
+    .city-images{
+        margin-right: -50%;
+        margin-bottom: 70%;
+        margin-left: 0%;
+    }
+    .city{
+        height: 250px;
+        width: 206px;
+    }
+    .view-div{
+        margin-top: -10%;
+    }
+    #row-1{
+        margin-left: 8%;
+    }
+    #row-2{
+        margin-left: 8%;
+    }
+    #bar{
+        margin-left: 26%;
+        margin-right: 26%;
+    }
+    .text{
+        margin-top: -41%;
+        font-size: x-large;
+    }
+    #container-2{
+        margin-top: -20%;
     }
 }
    
