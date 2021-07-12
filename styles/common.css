@@ -39,6 +39,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 .contact-div{
     margin-left: 2%;
@@ -85,6 +86,14 @@ footer{
   margin-left: 53px;
   margin-bottom: 5px;
 }
+/* giving z index:0 to modal and opacity */
+.modal-backdrop.show{
+  opacity: 0 !important;
+}
+.modal-backdrop.show{
+  z-index: 0 !important;
+}
+
 @media only screen and (max-width: 576px){
   #username{
     margin-left: 0%;

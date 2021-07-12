@@ -68,7 +68,7 @@ html{
 h2{
     font-family: "Ubuntu", sans-serif;
 }
-#input{
+._input{
     width: 250%;
 }
 /*changed*/
@@ -87,7 +87,7 @@ h2{
         width: 87%;
         margin-left: 2%;
     }
-    #input{
+    ._input{
         width: 250%;
         margin-left: -7%;
     }
