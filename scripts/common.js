@@ -81,7 +81,7 @@ var footer_template = `
 </div>
 </div>
 <div id="name">
-&copy; 2020 ROOM SEARCH PVT. LTD.
+&copy; 2021 ROOM SEARCH PVT. LTD.
 </div>
 <div class="apps">
 <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" height="20px" width="22px" class="social-media-image" id="facebook"/></a>

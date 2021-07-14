@@ -5,10 +5,10 @@
     <link rel="stylesheet" href="loader.html" />
     <link rel="stylesheet" href="styles/list.css" />
     <link rel="stylesheet" href="styles/common.css" />
-    <link
+   <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
-    />
+    /> 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -20,120 +20,40 @@
       integrity="undefined"
       crossorigin="anonymous"
     ></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body style="background-color: #e0e0e0;">
     <div>
-      <div id="loading"></div>
+     <div id="loading"></div>
       <header id="header"></header>
-      <article class="content">
-        <div class="view-div">
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      
+      <div id="list-container">
+        <!-- Added nav pills/tabs for list view and map view using bootstrap --> 
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                id="pills-listview-tab"
-                data-bs-toggle="pill"
-                href="#pills-listview"
-                role="tab"
-                aria-controls="pills-listview"
-                aria-selected="true"
-                >
-                List View
-              </a>
+                <a class="nav-link active" id="pills-listview-tab" data-toggle="pill" href="#list-view">List View</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                id="pills-mapview-tab"
-                data-bs-toggle="pill"
-                href="#pills-mapview"
-                role="tab"
-                aria-controls="pills-mapview"
-                aria-selected="false"
-                >
-                Map View
-              </a>
+                <a class="nav-link" id="pills-mapview-tab" data-toggle="pill" href="#map-view">Map View</a>
             </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div
-                class="tab-pane fade show active"
-                id="pills-listview"
-                role="tabpanel"
-                aria-labelledby="pills-listview-tab"
-                >
-                <div id="list-view">
-                  <div class="hotel" id="radisson">
-                    <div class="div1">
-                      <div class="img-div">
-                        <a href="detail.html" class="line"><img class="hotel-image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
-                      </div>
-                      <div class="desc-div">
-                        <h3 class="color">Radisson Blu Hotel</h3>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <p class="color">New Delhi</p>
-                      </div></a>
-                    </div>
-                  </div>
-                  <div class="hotel" id="lalit">
-                    <div class="div1">
-                      <div class="img-div">
-                        <img class="hotel-image" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"/>
-                      </div>
-                      <div class="desc-div">
-                        <h3>The Lalit New Delhi</h3>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full checked"></span>
-                        <span class="fa fa-star"></span>
-                        <p>New Delhi</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="taj-palace">
-                    <div class="div1">
-                      <div class="img-div">
-                        <img class="hotel-image" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"/>
-                      </div>
-                      <div class="desc-div">
-                        <h3>Taj Palace</h3>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <p>New Delhi</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                    class="tab-pane fade"
-                    id="pills-mapview"
-                    role="tabpanel"
-                    aria-labelledby="pills-mapview-tab"
-                    >
-                    <div id="map-view" style="display: flex;" >
-                      <img
-                      src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"
-                      id="mapview"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-      </article>
-      <footer id="footer"></footer>
+        </ul>
+        <div class="tab-content" id="pills-tab-content">
+            <div id="list-view" class="tab-pane fade show active" role="tabpanel">
+                <div id="hotel-list"></div>
+            </div>
+            <div id="map-view" class="tab-pane fade">
+              <img src = "https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
+              <div id="map"></div>
+            </div>
+        </div>
+    </div>                    
+    <footer id="footer"></footer>
       </div>
       <script src="scripts/common.js"></script>
+      <script src="scripts/list.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtitW_pphinQwsDd6hUoh0Y1jD6JO1W5s"></script>
     </body>  
 </html>

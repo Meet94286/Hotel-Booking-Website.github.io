@@ -35,7 +35,7 @@ footer{
     width: 100%;
     position: fixed;
     bottom: 0px;
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,6 +92,9 @@ footer{
 }
 .modal-backdrop.show{
   z-index: 0 !important;
+}
+.checked{
+  color: orange;
 }
 
 @media only screen and (max-width: 576px){

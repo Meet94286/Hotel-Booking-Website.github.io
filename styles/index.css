@@ -32,7 +32,7 @@ width: 100%;
     text-align: center;
     margin-bottom: 100px;
 }
-    #bar{
+     #bar{
     background-color: #f1f1f1;
     border: 1px solid transparent;
     border-radius: 12px;
@@ -40,9 +40,9 @@ width: 100%;
     padding: 10px;
     font-size: 16px;
     justify-content: center;
-    width: 100%; 
-    margin-left: 36%;
-    margin-right: 34.5%;   
+    width: 150%; 
+    margin-left: -15%;
+    margin-right: 30.5%;  
 }
 /*changed*/
 .view-div{
@@ -68,7 +68,7 @@ width: 100%;
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.5);
 }
-#_delhi:link{
+._city:link{
     text-decoration: none;
 }
 #container-2{
