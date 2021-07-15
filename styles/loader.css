@@ -1,18 +1,19 @@
 #loading{
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
-    margin-top: 20%;
-    margin-bottom: 20%;
-    border-radius: 50%;
-    border: 12px solid  #f3f3f3;
-    border-top-color: #444444;
-    animation: loading 1s linear infinite;
+    border: 12px solid #f3f3f3; 
+    border-radius: 50%; 
+    border-top: 12px solid #444444; 
+    width: 70px; 
+    height: 70px; 
+    animation: loading 1s linear infinite; 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto;
 }
 @keyframes loading {
-    0%{
-        transform: rotate(0deg)
-    }
+ 
     100%{
         transform: rotate(360deg)
     }

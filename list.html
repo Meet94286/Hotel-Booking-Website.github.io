@@ -20,7 +20,7 @@
       integrity="undefined"
       crossorigin="anonymous"
     ></script>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,24 +32,24 @@
       
       <div id="list-container">
         <!-- Added nav pills/tabs for list view and map view using bootstrap --> 
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <ul class="nav nav-pills mb-3" id="pills-tab">
             <li class="nav-item">
-                <a class="nav-link active" id="pills-listview-tab" data-toggle="pill" href="#list-view">List View</a>
+                <a class="nav-link active" data-bs-toggle="pill" href="#list-view">List View</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-mapview-tab" data-toggle="pill" href="#map-view">Map View</a>
+                <a class="nav-link" data-bs-toggle="pill" href="#map-view">Map View</a>
             </li>
         </ul>
         <div class="tab-content" id="pills-tab-content">
-            <div id="list-view" class="tab-pane fade show active" role="tabpanel">
+            <div id="list-view" class="tab-pane fade show active">
                 <div id="hotel-list"></div>
             </div>
             <div id="map-view" class="tab-pane fade">
-              <img src = "https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
-              <div id="map"></div>
+                <div id="map"></div>
             </div>
         </div>
     </div>                    
+ 
     <footer id="footer"></footer>
       </div>
       <script src="scripts/common.js"></script>

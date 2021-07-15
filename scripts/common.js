@@ -1,5 +1,17 @@
+let disableLoader = () => {
+  document.getElementById("loading").style.visibility = "hidden";
+  document.getElementsByTagName("body")[0].style.visibility = "visible";
+}
+
+let displayLoader = () => {
+  document.getElementsByTagName("body")[0].style.visibility = "hidden";
+  document.getElementById("loading").style.visibility  = "visible";
+}
+
 // make header as template
-var header_template = `<nav class="navbar-light" id="nav">
+let displayHeaderTemplate = () => {
+
+let header_template = `<nav class="navbar-light" id="nav">
 <div class="logo-div">
 <a href="index.html" target="_self"><img id="logo" src="assests/images/logo.png" height="200px" width="150px" alt="logo"/></a>
 <div>
@@ -45,9 +57,12 @@ var header_template = `<nav class="navbar-light" id="nav">
 </div>
 </nav>`;
 document.getElementById('header').innerHTML = header_template;
+};
 
-// make footer as template
-var footer_template = `
+// make footer as 
+let displayFooterTemplate = () => {
+
+let footer_template = `
 <div class="contact-div">
 <div class="button">
   <button
@@ -90,6 +105,12 @@ var footer_template = `
 </div>
 `;
 document.getElementById('footer').innerHTML = footer_template;
+};
+
+displayLoader();
+
+displayFooterTemplate();
+displayHeaderTemplate();
 
 // logged in or not
 // take variable to store value login is or not - isLogin.
@@ -158,9 +179,6 @@ let checkLogin = () => {
 }
 
 checkLogin();
-
-
-
 
 
 

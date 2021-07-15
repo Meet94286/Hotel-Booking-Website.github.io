@@ -1,11 +1,33 @@
 let urlParams = new URLSearchParams(window.location.search);
-const API_URL = "https://tripadvisor1.p.rapidapi.com";
-const tripAdvisorHost = "tripadvisor1.p.rapidapi.com";
+const API_URL = "https://travel-advisor.p.rapidapi.com/";
+const tripAdvisorHost = "travel-advisor.p.rapidapi.com";
 const tripAdvisorKey = "e64884c8aamshdfb72ab55cb56c0p122fffjsn80ebf167af2b";
 
+//this function is used to initialize the google map and place the markers at the position obtained by the latitude and longitude of the hotel from the API
+let initMap = locations => {
+    let center = {lat: parseFloat(locations[0][1]), lng: parseFloat(locations[0][2])};
+    let map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: center
+    });
+    let infoWindow =  new google.maps.InfoWindow({});
+    let marker, count;
+    for (count = 0; count < locations.length; count++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[count][1], locations[count][2]),
+            map: map,
+            title: locations[count][0]
+        });
+        google.maps.event.addListener(marker, 'click', ((marker, count) => {
+            return function() {
+                infoWindow.setContent(locations[count][0]);
+                infoWindow.open(map, marker);
+            }
+        })(marker, count));
+    }
+}
 
-
-let fetchHotelList = hotelList => {
+let initList = hotelList => {
     let hotelListElement = document.getElementById('hotel-list');
     hotelList.forEach(hotel => {
         let hotelLinkElement = document.createElement("a");
@@ -43,7 +65,12 @@ let fetchHotelListAPI = () => {
             let result = JSON.parse(this.responseText).data;
             let locations = [];
             hotelList = result.filter(item => item.result_type == "lodging");
-           fetchHotelList(hotelList);
+            hotelList.forEach(item => {
+                locations.push([item.result_object.name + "<br><a href=\"detail.html?id=" + item.result_object.location_id + "\">Book Hotel</a>", item.result_object.latitude, item.result_object.longitude]);
+            });
+            initList(hotelList);
+            initMap(locations);
+           disableLoader();
         }
     });
 
@@ -55,83 +82,3 @@ let fetchHotelListAPI = () => {
 }
 
 fetchHotelListAPI();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let fetchHotelListAPI = () => {
-//     let xhr = new XMLHttpRequest();
-
-//     xhr.addEventListener("readystatechange", function () {
-//         if (this.readyState === this.DONE) {
-//             let result = JSON.parse(this.responseText).data;
-//             let locations = [];
-//             hotelList = result.filter(item => item.result_type == "lodging");
-//             hotelList.forEach(item => {
-//                 locations.push([item.result_object.name + "<br><a href=\"detail.html?id=" + item.result_object.location_id + "\">Book Hotel</a>", item.result_object.latitude, item.result_object.longitude]);
-//             });
-//             initList(hotelList);
-//           //  initMap(locations);
-//          //   disableLoader();
-//         }
-//     });
-
-//     xhr.open("GET", "https://travel-advisor.p.rapidapi.com/locations/v2/auto-complete?query=delhi&lang=en_US&units=km");
-//    xhr.setRequestHeader("x-rapidapi-host", tripAdvisorHost);
-//     xhr.setRequestHeader("x-rapidapi-key", tripAdvisorKey);
-
-//     xhr.send();
-// }
-
-// fetchHotelListAPI();

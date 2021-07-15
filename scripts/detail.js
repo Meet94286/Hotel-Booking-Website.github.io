@@ -85,7 +85,7 @@ let fetchHotelPhotosAPI = () => {
                 div.appendChild(image);
                 carouselParentElement.appendChild(div);
             }  
-               
+            disableLoader(); 
         }
     });
     xhr.open("GET",API_URL + "photos/list?lang=en_US&location_id=" + urlParams.get('id'));
